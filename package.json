@@ -1,0 +1,40 @@
+{
+	"name": "ameliance-fetch",
+	"version": "0.0.1",
+	"description": "Library for data fetching",
+	"main": "./dist/index.js",
+	"module": "./dist/index.mjs",
+	"types": "./dist/index.d.ts",
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "tsup",
+		"test": "jest",
+		"local-publish": "npm link && npm link ameliance-fetch",
+		"demo": "npx ts-node demo/src/index"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/AmelianceSkyMusic/ameliance-fetch.git"
+	},
+	"keywords": [
+		"fetch"
+	],
+	"author": "Ameliance SkyMusic <AmelianceSkyMusic@gmail.com>",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/AmelianceSkyMusic/ameliance-fetch/issues"
+	},
+	"homepage": "https://github.com/AmelianceSkyMusic/ameliance-fetch#readme",
+	"devDependencies": {
+		"@types/jest": "^29.5.12",
+		"husky": "^9.0.11",
+		"jest": "^29.7.0",
+		"lint-staged": "^15.2.2",
+		"ts-jest": "^29.1.2",
+		"ts-node": "^10.9.2",
+		"tsup": "^8.0.2",
+		"typescript": "^5.4.5"
+	}
+}

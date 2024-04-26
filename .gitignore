@@ -1,0 +1,30 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+.yarn/install-state.gz
+
+# testing
+/coverage
+/coverage.data
+
+# production
+/dist
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# vscode settings
+.vscode/*
+
+# temp folders / files
+*._backup*
+*._legacy*
+*._temp*
+*._labs*
+
+#history
+.history
+.lh
