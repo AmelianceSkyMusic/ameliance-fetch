@@ -274,6 +274,9 @@ A-FETCH ERROR > 404 | Not Found
 ## History
 
 ```
+0.0.3 [2024_09_11]:
+   *: fix publish issues
+
 0.0.2 [2024_09_11]:
    *: update code style
 
