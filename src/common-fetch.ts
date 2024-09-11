@@ -1,6 +1,6 @@
 import type { ReturnHandleAFetchError } from './helpers/handle-a-fetch-error';
 import { handleAFetchError } from './helpers/handle-a-fetch-error';
-import { ErrorHandleOptions } from './types/error-handle-options';
+import type { ErrorHandleOptions } from './types/error-handle-options';
 
 async function parseResponse(response: Response) {
 	const text = await response.text();

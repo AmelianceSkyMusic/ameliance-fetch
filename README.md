@@ -274,6 +274,9 @@ A-FETCH ERROR > 404 | Not Found
 ## History
 
 ```
+0.0.2 [2024_09_11]:
+   *: update code style
+
 0.0.1 [2024-04-26]:
    +: init package
 ```

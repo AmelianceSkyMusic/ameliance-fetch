@@ -4,7 +4,7 @@ import { commonFetchPatch } from './common-fetch-patch';
 import { commonFetchPost } from './common-fetch-post';
 import { commonFetchPut } from './common-fetch-put';
 import type { SearchParams } from './helpers/get-fetch-url';
-import { AFetchBody, AFetchErrorBody, AFetchRequest } from './types/a-fetch-types';
+import type { AFetchBody, AFetchErrorBody, AFetchRequest } from './types/a-fetch-types';
 
 const DEFAULT_HEADERS_INIT = {};
 const ERROR_DEFAULT_TITLE = 'A-FETCH ERROR';

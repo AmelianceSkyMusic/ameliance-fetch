@@ -2,7 +2,7 @@ import type { CommonFetchResponse } from './common-fetch';
 import { commonFetch } from './common-fetch';
 import type { SearchParams } from './helpers/get-fetch-url';
 import { getFetchUrl } from './helpers/get-fetch-url';
-import { ErrorHandleOptions } from './types/error-handle-options';
+import type { ErrorHandleOptions } from './types/error-handle-options';
 
 type CommonFetchPost<BodyT> = {
 	apiUrl: string;

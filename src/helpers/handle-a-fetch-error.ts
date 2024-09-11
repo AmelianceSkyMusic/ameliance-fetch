@@ -1,4 +1,4 @@
-import { ErrorHandleOptions } from '../types/error-handle-options';
+import type { ErrorHandleOptions } from '../types/error-handle-options';
 import type { ErrorHandler } from './error-handler';
 import { errorHandler } from './error-handler';
 
