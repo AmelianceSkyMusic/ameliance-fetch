@@ -1,6 +1,6 @@
 {
 	"name": "ameliance-fetch",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "Library for data fetching",
 	"main": "./dist/index.js",
 	"module": "./dist/index.mjs",
