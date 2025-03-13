@@ -64,19 +64,25 @@ describe('aFetch:', () => {
 		const resp = await getTodo(1);
 
 		if (resp.ok) {
-			resp.ok;
-			resp.data;
-			resp.data.id;
-			resp.data.userId;
-			resp.data.title;
-			resp.data.completed;
+			// eslint-disable-next-line no-console
+			console.log(
+				resp.ok,
+				resp.data,
+				resp.data.id,
+				resp.data.userId,
+				resp.data.title,
+				resp.data.completed,
+			);
 		} else {
-			resp.ok;
-			resp.data;
-			resp.data.code;
-			resp.error;
-			resp.error.message;
-			resp.error.status;
+			// eslint-disable-next-line no-console
+			console.log(
+				resp.ok,
+				resp.data,
+				resp.data.code,
+				resp.error,
+				resp.error.message,
+				resp.error.status,
+			);
 		}
 	});
 });
