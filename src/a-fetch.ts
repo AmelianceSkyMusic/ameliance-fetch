@@ -18,13 +18,14 @@ type AFetchOption = {
 
 export function aFetch<GlobalErrorBodyT extends AFetchErrorBody = AFetchErrorBody>(
 	apiUrl: string,
-	options: Partial<AFetchOption> = {},
+	options: Partial<AFetchOption> & RequestInit = {},
 ) {
 	const {
 		headersInit = DEFAULT_HEADERS_INIT,
 		errorTitle = ERROR_DEFAULT_TITLE,
 		showConsoleError = true,
 		deepError = true,
+		...restInitOptions
 	} = options;
 
 	const errorHandleOptions = { errorTitle, showConsoleError, deepError };
@@ -46,6 +47,7 @@ export function aFetch<GlobalErrorBodyT extends AFetchErrorBody = AFetchErrorBod
 				searchParams,
 				init: {
 					...init,
+					...restInitOptions,
 					headers: { ...(init?.headers || {}), ...headersInit },
 				},
 				errorHandleOptions,
@@ -67,6 +69,7 @@ export function aFetch<GlobalErrorBodyT extends AFetchErrorBody = AFetchErrorBod
 				searchParams,
 				init: {
 					...init,
+					...restInitOptions,
 					headers: { ...(init?.headers || {}), ...headersInit },
 				},
 				errorHandleOptions,
@@ -91,6 +94,7 @@ export function aFetch<GlobalErrorBodyT extends AFetchErrorBody = AFetchErrorBod
 				searchParams,
 				init: {
 					...init,
+					...restInitOptions,
 					headers: { ...(init?.headers || {}), ...headersInit },
 				},
 				errorHandleOptions,
@@ -115,6 +119,7 @@ export function aFetch<GlobalErrorBodyT extends AFetchErrorBody = AFetchErrorBod
 				searchParams,
 				init: {
 					...init,
+					...restInitOptions,
 					headers: { ...(init?.headers || {}), ...headersInit },
 				},
 				errorHandleOptions,
@@ -139,6 +144,7 @@ export function aFetch<GlobalErrorBodyT extends AFetchErrorBody = AFetchErrorBod
 				searchParams,
 				init: {
 					...init,
+					...restInitOptions,
 					headers: { ...(init?.headers || {}), ...headersInit },
 				},
 				errorHandleOptions,
