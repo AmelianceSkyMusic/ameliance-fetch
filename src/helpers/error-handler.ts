@@ -57,6 +57,7 @@ export function errorHandler({
 		const title = `${errorTitle} >`;
 		const subtitle = code ? `${status} | ${code} | ${message}\n` : `${status} | ${message}\n`;
 
+		// eslint-disable-next-line no-console
 		console.error(
 			title,
 			subtitle,
